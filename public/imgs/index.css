@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Microsoft Yahei", Arial;
+}
+
+nav{
+    height: 75px;
+    width: 100%;
+    padding: 0 144px;
+    box-sizing: border-box;
+    background: #fff;
+}
+nav>img{
+    margin-top: 15px;
+    width: 120px;
+    height: 43px;
+}
+nav .tags{
+    display: inline-block;
+    line-height: 75px;
+    float: right;
+}
+nav .tags .tag{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 75px;
+}
+.tags :last-child{
+    margin-right: 0px;
+}
+.greenFont{
+    color: #50ccbb;
+}
+.fontLight{
+    font-weight: lighter;
+}
+.firstH2{
+
+}
+.topPic{
+    height: 640px;
+    width: 100%;
+}
+.sectionBox{
+    height: 194px;
+    width: 100%;
+    position: relative;
+}
+.sectionBox .secTitle{
+    display: inline-block;
+    height: 68px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 68px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.sectionBox .buttomLine{
+    display: inline-block;
+    width: 40px;
+    border-bottom: 5px solid #50ccbb;
+    position: absolute;
+    margin:auto;
+    top: 130px;
+    left:0;
+    right:0;
+}
+.ourService{
+    background: #fff;
+}
+.serDetails{
+    width: 90%;
+    margin:0 auto;
+}
+.serDetails p{
+    margin:0 0 33px 0;
+    font-weight: lighter;
+}
+.serDetails .serText{
+    text-align: center;
+    font-size: 18px;
+}
+.serDetails .boxRow{
+    margin: 33px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.serDetails .boxRow .box{
+    box-sizing: border-box;
+    border: 1px solid #d2d2d2;
+    background: #fcfcfc;
+    width: 30%;
+    height: 296px;
+    text-align: center;
+    display: inline-block;
+    align-items:center;
+    position: relative;
+}
+.serDetails .boxRow .box .boxContent{
+    height: 125px;
+    margin: auto;
+    position: absolute;
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.serDetails .boxRow .box .boxContent img{
+    margin-bottom: 10px;
+}
+.middlePic{
+    height: 482px;
+    width: 100%;
+    background: url("img/background02.png");
+    color: #fff;
+}
+.middlePic .steps{
+    height: 288px;
+    width: 90%;
+    margin:0 auto;
+}
+.middlePic .steps>div{
+    float: left;
+}
+.middlePic .steps .step{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.middlePic .steps .step .stepTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 35px 0;
+}
+.middlePic .steps .step p{
+    font-size: 16px;
+    font-weight: lighter;
+}
+.middlePic .steps .arrow{
+    width: 6.6%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.ourTeam{
+    background: #f8f8f8;
+    padding-bottom: 63px;
+}
+.ourTeam .teamIntro{
+    display: flex;
+    justify-content: flex-end;
+}
+.ourTeam .teamIntro .single{
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+.ourTeam .teamIntro .single .photo{
+    width: 262px;
+    height: 262px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+.ourTeam .teamIntro .single .photo:hover .introduction{
+    -webkit-animation: introAnimation 1s;
+    animation-fill-mode: forwards;
+}
+.ourTeam .teamIntro .single .photo .introduction{
+    background: #ffffff;
+    opacity: 0.8;
+    position: absolute;
+    width: 262px;
+    height: 262px;
+    border-radius: 50%;
+    font-size: 13px;
+    top: 262px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+@keyframes introAnimation
+{
+    0% {top: 262px;}
+    100% {top: 0px;}
+}
+.ourTeam .teamIntro .single .name{
+    font-size: 24px;
+    font-weight: bold;
+}
+.ourTeam .teamIntro .single .intro{
+    font-size: 16px;
+}
+.ourTeam .teamIntro .single .introduction{
+
+    text-align: center;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+    overflow: hidden;
+    display: inline-block;
+    top:0;
+    left: calc(50% - 131px);
+}
+.section{
+    background: #ffffff;
+    overflow: hidden;
+}
+.section .container{
+    margin-top: 0;
+}
+
+.aboutBk{
+    height: 480px;
+    width: 100%;
+    background: #f8f8f8;
+    text-align: center;
+    padding-bottom: 57px;
+}
+.p-t-60 {
+    padding-top: 0;
+}
+.aboutBk img{
+    width: 257px;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+}
+.aboutBk p{
+    font-size: 18px;
+    font-weight: lighter;
+    width: 90%;
+    margin: 20px auto
+}
+.buttomPic{
+    background: url("img/background03.png");
+    width: 100%;
+    height: 483px;
+    padding-top: 100px;
+}
+.buttomPic .buttomTop{
+    height: 323px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.buttomPic .buttomTop>div{
+    width: 30%;
+    height: 100%;
+    color: #fff;
+}
+.buttomPic .buttomTop .aboutUs{
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.buttomPic .buttomTop .aboutItem{
+    margin: 10px 0;
+}
+.buttomPic .buttomButtom{
+    height: 56px;
+    line-height: 56px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    buttom:0;
+}
+.p-t-60 {
+    padding-top: 0px !important;
+}
+.col-md-offset-3 {
+    margin-left: 26.5% !important;
+}

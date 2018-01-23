@@ -1,0 +1,21 @@
+/*
+ * html styles
+ */
+
+const styles = {
+    root: {
+	width: '100%',
+    },
+    appbar: {
+	backgroundColor: '#fff',
+	display:'flex',
+	justifyContent:'center'
+    },
+    barlogo: {
+	height:38,
+	paddingLeft:15,
+	paddingRight:15
+    }
+}
+
+export default styles

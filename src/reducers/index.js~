@@ -1,0 +1,12 @@
+/*
+ * init reducer
+ */
+
+import { combineReducers } from 'redux'
+import home from './home'
+
+const Router = combinReducers({
+    home
+})
+
+export default Reducer

@@ -1,0 +1,62 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from 'material-ui/styles';
+import Typography from 'material-ui/Typography';
+import Divider from 'material-ui/Divider';
+import Grid from 'material-ui/Grid'
+import Paper from 'material-ui/Paper'
+
+const styles = theme =>({
+    img: {
+	width:'8vw'
+    }
+})
+
+const Service = styles => {
+    const { classes } = styles
+    return(
+	    <Grid style={{padding:48,paddingBottom:96}} align="center">
+	    <Grid item><Typography color="secondary" align="center" type="headline"
+	style={{marginTop:36}}
+	    >我们的服务</Typography>
+	    <Divider style={{backgroundColor:'#73c9b1', height:5, width:36, marginTop:14,marginBottom:42}}/>
+	    <Typography color="secondary" align="center" type="subheading"
+	    >大块头区块链 （Blockheaders Co. Ltd ） 由一群 Geek 的开发者驱动的“区块链技术人才 及软件开发解决方案提供商”，于2017年9月在苏州成立，由来自澳大利亚极具影响力区块链公司 Blockchain Global 和本地的 Geek 开发者组建，致力于打造最有影响力的“区块链研发中心”，助力全球区块链产业发展， 带动本地区块链产业！预计三年内将成长为千人规模区块链技术团队，90% 以上为区块链技术开发人员。
+	</Typography></Grid>
+	    <Grid container justify="center" direction="row" style={{marginTop:30}}>
+	    <Grid item xs={4} ><Paper style={{paddingTop:48,paddingBottom:48}}>
+	    <img className={classes.img} alt="img"
+	src={require('../imgs/img/ser01.png')} style={{marginBottom:5}} />
+	    <Typography type="subheading" color="secondary">区块链技术咨询</Typography>
+	    </Paper></Grid>
+	    <Grid item xs={4} ><Paper style={{paddingTop:48,paddingBottom:48}}>
+	    <img className={classes.img} alt="img"
+	src={require('../imgs/img/ser02.png')} style={{marginBottom:5}} />
+	    <Typography type="subheading" color="secondary">区块链技术开发</Typography>
+	    </Paper></Grid>
+	    <Grid item xs={4} ><Paper style={{paddingTop:48,paddingBottom:48}}>
+	    <img className={classes.img} alt="img"
+	src={require('../imgs/img/ser03.png')} style={{marginBottom:5}} />
+	    <Typography type="subheading" color="secondary">区块链技术评测</Typography>
+	    </Paper></Grid>
+	    <Grid item xs={4} ><Paper style={{paddingTop:48,paddingBottom:48}}>
+	    <img className={classes.img} alt="img"
+	src={require('../imgs/img/ser04.png')} style={{marginBottom:5}} />
+	    <Typography type="subheading" color="secondary">区块链工作坊</Typography>
+	    </Paper></Grid>
+	    <Grid item xs={4} ><Paper style={{paddingTop:48,paddingBottom:48}}>
+	    <img className={classes.img} alt="img"
+	src={require('../imgs/img/ser05.png')} style={{marginBottom:5}} />
+	    <Typography type="subheading" color="secondary">区块链技术人才培训</Typography>
+	    </Paper></Grid>
+	    <Grid item xs={4} ><Paper style={{paddingTop:48,paddingBottom:48}}>
+	    <img className={classes.img} alt="img"
+	src={require('../imgs/img/ser06.png')} style={{marginBottom:5}} />
+	    <Typography type="subheading" color="secondary">Bass(Blockchain as a Service)</Typography>
+	    </Paper></Grid>
+	    </Grid>
+	    </Grid>
+    )
+}
+
+export default withStyles(styles)(Service)

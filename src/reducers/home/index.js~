@@ -1,0 +1,15 @@
+/*
+ * home reducer
+ */
+
+import { combineReducers } from 'redux'
+
+const lang = ( state = "CN", action ) =>{
+    switch (action.type){
+	
+    }
+}
+
+const home = combinReducers({
+    lang
+})
